@@ -1,4 +1,5 @@
 package com.generics;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Generics {
@@ -6,10 +7,15 @@ public class Generics {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please Enter the 3 Numbers to check Maximum ");
 
-        int x= scan.nextInt();
-        int y= scan.nextInt();
-        int z= scan.nextInt();
+        ArrayList<Integer> integers = new ArrayList<>();
+        Integer x = scan.nextInt();
+        Integer y = scan.nextInt();
+        Integer z = scan.nextInt();
+        integers.add(x);
+        integers.add(y);
+        integers.add(z);
 
+        System.out.println(integers);
         maxOfNumber(x,y,z);
     }
 
