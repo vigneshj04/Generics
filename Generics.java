@@ -7,19 +7,19 @@ public class Generics {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please Enter the 3 Numbers to check Maximum ");
 
-        ArrayList<Integer> integers = new ArrayList<>();
-        Integer x = scan.nextInt();
-        Integer y = scan.nextInt();
-        Integer z = scan.nextInt();
-        integers.add(x);
-        integers.add(y);
-        integers.add(z);
+        ArrayList<Float> floats = new ArrayList<>();
+        Float x = scan.nextFloat();
+        Float y = scan.nextFloat();
+        Float z = scan.nextFloat();
+        floats.add(x);
+        floats.add(y);
+        floats.add(z);
 
-        System.out.println(integers);
+        System.out.println(floats);
         maxOfNumber(x,y,z);
     }
 
-    public static <T extends Integer> T maxOfNumber(T x, T y, T z) {
+    public static <T extends Float> T maxOfNumber(T x, T y, T z) {
         T max = x;
         if (y.compareTo(max) > 0) {
             max = y;
